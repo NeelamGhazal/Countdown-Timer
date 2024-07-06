@@ -13,7 +13,7 @@ const res = await inquirer.prompt({
     message: "Please enter the amount of seconds",
     validate: (input)=>{
         if (isNaN(input)){
-            return "please enter valid number"
+            return "Please enter valid number"
         } else if (input > 60) {
             return "seconds must be in 60";
         } else {
